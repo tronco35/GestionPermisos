@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: blockchain-python
+Version: 0.0.2
+Summary: blockchain-python is a lightweight Python library for implementing blockchain technology. It provides an easy-to-use interface for creating decentralized ledgers with features like secure transactions, immutable ledger, and flexible data storage.
+Author: Parth Mahakal
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Blockchain-Python
+
+Blockchain-Python is a Python library for creating a basic blockchain structure.
+
+## Installation
+
+You can install Blockchain-Python using pip:
+
+```bash
+pip install blockchain-python
+```
+
+
+```python
+import blockchain_python as bcp
+
+# Initialize Blockchain
+blockchain = bcp.Blockchain()
+
+# Add a block with transaction data
+blockchain.add_block('transaction 1')
+
+# Read the first block
+blockchain.read_block(0)
+
+# Show all blocks
+blockchain.show_all_blocks()
+```
+
+## Example
+
+```python
+import blockchain_python as bcp
+
+# Initialize Blockchain
+blockchain = bcp.Blockchain()
+
+# Add multiple blocks
+blockchain.add_block('transaction 1')
+blockchain.add_block('transaction 2')
+blockchain.add_block('transaction 3')
+
+# Read the second block
+blockchain.read_block(1)
+
+# Show all blocks
+blockchain.show_all_blocks()
+```
+
