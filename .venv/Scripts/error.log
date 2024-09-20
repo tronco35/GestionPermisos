@@ -1,0 +1,486 @@
+2024-09-19 00:05:36,325:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:05:46,049:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:05:55,736:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:06:10,593:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:06:19,572:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:09:33,775:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'Report' object has no attribute 'filter_blocks_by_user_id'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 145, in filter_by_user_id
+    blocks_info = report.filter_blocks_by_user_id(user_id_to_filter)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Report' object has no attribute 'filter_blocks_by_user_id'
+2024-09-19 00:09:34,726:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'Report' object has no attribute 'filter_blocks_by_user_id'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 145, in filter_by_user_id
+    blocks_info = report.filter_blocks_by_user_id(user_id_to_filter)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Report' object has no attribute 'filter_blocks_by_user_id'
+2024-09-19 00:09:42,513:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'Report' object has no attribute 'filter_blocks_by_user_id'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 145, in filter_by_user_id
+    blocks_info = report.filter_blocks_by_user_id(user_id_to_filter)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Report' object has no attribute 'filter_blocks_by_user_id'
+2024-09-19 00:09:43,396:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'Report' object has no attribute 'filter_blocks_by_user_id'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 145, in filter_by_user_id
+    blocks_info = report.filter_blocks_by_user_id(user_id_to_filter)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Report' object has no attribute 'filter_blocks_by_user_id'
+2024-09-19 00:09:43,605:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'Report' object has no attribute 'filter_blocks_by_user_id'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 145, in filter_by_user_id
+    blocks_info = report.filter_blocks_by_user_id(user_id_to_filter)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Report' object has no attribute 'filter_blocks_by_user_id'
+2024-09-19 00:11:08,321:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 00:11:10,984:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 51, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 20:34:31,670:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:34:37,341:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:34:38,228:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:34:46,984:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:35:45,326:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:35:51,431:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:12,902:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:57,837:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:58,261:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:58,437:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:58,612:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:36:58,853:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:37:02,638:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:37:03,462:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:38:10,015:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:38:43,055:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:38:51,928:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:40:09,052:ERROR:Validation error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 60, in submit_form
+    raise ValueError("Todos los campos son obligatorios")
+ValueError: Todos los campos son obligatorios
+2024-09-19 20:40:13,996:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:15,116:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:15,660:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:15,837:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:16,882:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:28,928:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:40:50,468:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:40:51,753:ERROR:Future exception was never retrieved
+future: <Future finished exception=AttributeError("'AlertDialog' object has no attribute 'close'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henry\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flet_core\page.py", line 941, in wrapper
+    handler(*args)
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 129, in <lambda>
+    ft.TextButton("OK", on_click=lambda e: page.dialog.close())
+                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AlertDialog' object has no attribute 'close'
+2024-09-19 20:42:03,405:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:42:09,632:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:52:08,156:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 64, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 15, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:55:18,393:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:56:37,164:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:57:58,151:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 63, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 14, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 20:58:23,673:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 64, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 15, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 21:02:42,961:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 64, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^^^
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 15, in get_db_config
+    'server': config['database']['server'],
+              ~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 941, in __getitem__
+    raise KeyError(key)
+KeyError: 'database'
+2024-09-19 21:04:03,373:ERROR:Error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 64, in submit_form
+    db_config = get_db_config()
+                ^^^^^^^^^^^^^
+NameError: name 'get_db_config' is not defined
+2024-09-19 21:04:41,847:ERROR:Database error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 78, in submit_form
+    cursor.execute(insert_query, user_id.value, job_type.value, duration.value, risks.value, urgency.value)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'id_solicitud', table 'GestionPerApp.dbo.Solicitud'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2024-09-19 21:09:42,812:ERROR:Database error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 78, in submit_form
+    cursor.execute(insert_query, user_id.value, job_type.value, duration.value, risks.value, urgency.value)
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Solicitud__id_em__3C69FB99". The conflict occurred in database "GestionPerApp", table "dbo.Empleados", column \'id\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)')

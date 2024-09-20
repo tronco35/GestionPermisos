@@ -1,14 +1,24 @@
 import flet as ft
 import logging
-from blockchain import Blockchain1  # Import the Blockchain1 class
-from report import Report  # Import the Report class
+import pyodbc
+import configparser
+
 
 # Set up logging
 logging.basicConfig(filename='error.log', level=logging.ERROR, format='%(asctime)s:%(levelname)s:%(message)s')
 
-# Initialize the blockchain
-blockchain = Blockchain1()
-report = Report(blockchain)
+#def get_db_config():
+#    config = configparser.ConfigParser()
+#    config.read('db_config.ini') #
+    
+#    db_config = {
+#        'server': config['database']['server'],
+#        'database': config['database']['database'],
+#        'username': config['database']['username'],
+#        'password': config['database']['password']
+#    }
+    
+#    return db_config
 
 def main(page: ft.Page):
     page.title = "Solicitud de Permiso de Trabajo"
@@ -50,6 +60,24 @@ def main(page: ft.Page):
             if not user_id.value or not job_type.value or not duration.value or not risks.value or not urgency.value:
                 raise ValueError("Todos los campos son obligatorios")
 
+            # Get database configuration
+           # db_config = get_db_config()
+
+            # Establish a database connection
+            #f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={db_config["server"]};DATABASE={db_config["database"]};UID={db_config["username"]};PWD={db_config["password"]}'
+            conn = pyodbc.connect(
+                f'DRIVER=ODBC Driver 17 for SQL Server;SERVER=Duque;DATABASE=GestionPerApp;UID=UsrGes;PWD=Bogota123456*'
+            )
+            cursor = conn.cursor()
+
+            # Insert data into the Solicitud table
+            insert_query = """
+            INSERT INTO Solicitud (id_empleado, tipo_trabajo, duracion, riesgos, urgencia, fecha)
+            VALUES (?, ?, ?, ?, ?, GETDATE())
+            """
+            cursor.execute(insert_query, user_id.value, job_type.value, duration.value, risks.value, urgency.value)
+            conn.commit()
+
             # Create a new view with the form information
             info_view = ft.View(
                 "/info",
@@ -63,7 +91,7 @@ def main(page: ft.Page):
                                 ft.Text(f"Duración (horas): {duration.value}"),
                                 ft.Text(f"Riesgos: {risks.value}"),
                                 ft.Text(f"Urgencia: {urgency.value}"),
-                                ft.ElevatedButton(text="Confirme envío de la información", bgcolor=ft.colors.GREEN_500, color=ft.colors.WHITE, on_click=confirm_submission)
+                                ft.ElevatedButton(text="Confirme envío de la información", bgcolor=ft.colors.GREEN_500, color=ft.colors.WHITE)
                             ],
                             alignment=ft.MainAxisAlignment.CENTER,
                             spacing=20,
@@ -81,81 +109,68 @@ def main(page: ft.Page):
             page.views.append(info_view)
             page.go("/info")
 
+        except pyodbc.Error as db_err:
+            logging.error("Database error during form submission", exc_info=True)
+            show_error_dialog(page, f"Database Error: {str(db_err)}")
+        except ValueError as ve:
+            logging.error("Validation error during form submission", exc_info=True)
+            show_error_dialog(page, f"Validation Error: {str(ve)}")
         except Exception as ex:
             logging.error("Error during form submission", exc_info=True)
-            page.snack_bar = ft.SnackBar(ft.Text(f"Error: {str(ex)}"), bgcolor=ft.colors.RED)
-            page.snack_bar.open = True
+            show_error_dialog(page, f"Error: {str(ex)}")
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
+    # Function to show error dialog
+    def show_error_dialog(page, message):
+        def close_dialog(e):
+            page.dialog.open = False
             page.update()
+            page.go("/")
 
-    # Function to handle confirmation and blockchain storage
-    def confirm_submission(e):
-        try:
-            # Add transaction to the blockchain
-            blockchain.new_transaction(
-                sender="user",
-                recipient="blockchain",
-                amount={
-                    "user_id": user_id.value,
-                    "job_type": job_type.value,
-                    "duration": duration.value,
-                    "risks": risks.value,
-                    "urgency": urgency.value
-                }
-            )
-            last_proof = blockchain.last_block['proof']
-            proof = blockchain.proof_of_work(last_proof)
-            blockchain.new_block(proof)
+        error_dialog = ft.AlertDialog(
+            title=ft.Text("Error"),
+            content=ft.Text(message),
+            actions=[
+                ft.TextButton("OK", on_click=close_dialog)
+            ],
+            on_dismiss=close_dialog
+        )
+        page.dialog = error_dialog
+        error_dialog.open = True
+        page.update()
 
-            # Show success message
-            success_view = ft.View(
-                "/success",
-                controls=[
-                    ft.Container(
-                        content=ft.Column(
-                            [
-                                ft.Text("Información enviada con éxito a la base de datos blockchain", size=30, color=ft.colors.GREEN_900, text_align=ft.TextAlign.CENTER),
-                                ft.ElevatedButton(text="Volver", bgcolor=ft.colors.BLUE_500, color=ft.colors.WHITE, on_click=lambda e: page.go("/"))
-                            ],
-                            alignment=ft.MainAxisAlignment.CENTER,
-                            spacing=20,
-                        ),
-                        padding=30,
-                        width=500,
-                        bgcolor=ft.colors.WHITE,
-                        border_radius=8,
-                        shadow=ft.BoxShadow(blur_radius=10, color=ft.colors.BLACK),
-                    )
-                ]
-            )
+    # Create submit button
+    submit_button = ft.ElevatedButton(text="Enviar", bgcolor=ft.colors.BLUE_500, color=ft.colors.WHITE, on_click=submit_form)
 
-            # Navigate to the success view
-            page.views.append(success_view)
-            page.go("/success")
+    # Create file upload button
+    upload_button = ft.ElevatedButton(text="Cargar documentos", bgcolor=ft.colors.ORANGE_500, color=ft.colors.WHITE, on_click=pick_files)
 
-        except Exception as ex:
-            logging.error("Error during blockchain submission", exc_info=True)
-            page.snack_bar = ft.SnackBar(ft.Text(f"Error: {str(ex)}"), bgcolor=ft.colors.RED)
-            page.snack_bar.open = True
-            page.update()
+    # Add fields and buttons to the page
+    page.add(
+        ft.Container(
+            content=ft.Column(
+                [
+                    ft.Text("Solicitud de Permiso de Trabajo", size=30, color=ft.colors.BLUE_GREY_900, text_align=ft.TextAlign.CENTER),
+                    user_id,
+                    job_type,
+                    duration,
+                    risks,
+                    ft.Text("Urgencia:", size=16, color=ft.colors.BLUE_GREY_700),
+                    urgency,
+                    upload_button,
+                    submit_button,
+                ],
+                alignment=ft.MainAxisAlignment.CENTER,
+                spacing=20,
+            ),
+            padding=30,
+            width=500,
+            bgcolor=ft.colors.WHITE,
+            border_radius=8,
+            shadow=ft.BoxShadow(blur_radius=10, color=ft.colors.BLACK),
+        )
+    )
 
-    # Function to display blockchain information
-    def display_blockchain_info(e):
-        blocks_info = report.display_all_blocks()
-        info_view = ft.View(
-            "/blockchain_info",
-            controls=[
-                ft.Container(
-                    content=ft.Column(
-                        [
-                            ft.Text("Información de la Blockchain", size=30, color=ft.colors.BLUE_GREY_900, text_align=ft.TextAlign.CENTER),
-                            ft.Text(blocks_info, size=16, color=ft.colors.BLACK),
-                            ft.ElevatedButton(text="Volver", bgcolor=ft.colors.BLUE_500, color=ft.colors.WHITE, on_click=lambda e: page.go("/"))
-                        ],
-                        alignment=ft.MainAxisAlignment.CENTER,
-                        spacing=20,
-                    ),
-                    padding=30,
-                    width=500,
-                    bgcolor=ft.colors.WHITE,
-                    border_radius=8,
-             
+ft.app(target=main)
