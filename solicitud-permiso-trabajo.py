@@ -85,7 +85,7 @@ def main(page: ft.Page):
                 # Insert data into the Solicitud table
                 insert_query = """
                 INSERT INTO Solicitud (id_empleado, tipo_trabajo, duracion, riesgos, urgencia, fecha)
-                VALUES (?, ?, ?, ?, ?, GETDATE())
+                VALUES (?, ?, ?, ?, ?,  GETDATE())
                 """
                 cursor.execute(insert_query, user_id.value, job_type.value, duration.value, risks.value, urgency.value)
                 conn.commit()
@@ -200,3 +200,5 @@ def main(page: ft.Page):
     )
 
 ft.app(target=main)
+
+#to do: when return success message, return number ID_solictud
