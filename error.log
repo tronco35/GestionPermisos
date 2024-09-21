@@ -1,0 +1,17 @@
+2024-09-20 21:09:15,491:ERROR:Database error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 80, in confirm_submission
+    conn = pyodbc.connect(
+           ^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'UsrGes'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'UsrGes'. (18456)")
+2024-09-20 21:14:47,869:ERROR:Database error during form submission
+Traceback (most recent call last):
+  File "d:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 80, in confirm_submission
+    conn = pyodbc.connect(
+           ^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'UsrGes'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'UsrGes'. (18456)")
+2024-09-20 21:34:10,767:ERROR:Database error during form submission
+Traceback (most recent call last):
+  File "D:\SergioArboleda\Proyecto\GestionPermisosdeTrabajo\code\GestionPerApp\solicitud-permiso-trabajo.py", line 90, in confirm_submission
+    cursor.execute(insert_query, user_id.value, job_type.value, duration.value, risks.value, urgency.value)
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Solicitud__id_em__5535A963". The conflict occurred in database "GestionPerApp", table "dbo.Empleados", column \'id\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)')

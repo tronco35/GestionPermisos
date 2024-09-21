@@ -22,9 +22,10 @@ create table Empleados(
     puesto varchar(50),
     salario float
 );
-
+drop table Solicitud
+go
 create table Solicitud(
-    id_solicitud int primary key,
+    id_solicitud int identity (1,1) primary key,
     id_empleado int,
     tipo_trabajo varchar(50),
     duracion int,
